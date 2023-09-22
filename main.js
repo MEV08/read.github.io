@@ -1,5 +1,8 @@
 const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
+let dots = document.getElementById('dots');
+let more = document.getElementById('more');
+let btn = document.getElementById('btn');
 
 const mainCourses = document.getElementById('mainCourses')
 const additionalCourses = document.getElementById('additionalCourses')
@@ -18,3 +21,16 @@ btn1.addEventListener('click', function() {
     mainCourses.classList.add('active');
     additionalCourses.classList.remove('active');
 })
+
+function readMore() {
+    if(dots.style.display === 'none') {
+        dots.style.display = 'inline';
+        more.style.display = 'none';
+        btn.innerHTML = 'Читать подробнее';
+    } else {
+        dots.style.display = 'none';
+        more.style.display = 'inline';
+        btn.innerHTML = 'Скрыть';
+    }
+
+}

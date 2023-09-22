@@ -350,19 +350,43 @@ main {
 .about-programm {
     height: 100%;
     margin: 0 auto;
-    background-color: #191919;
+    padding-bottom: 70px;
 }
 .about-programm__title {
+    margin-bottom: 0;
     text-align: center;
-    border: 1px solid black;
     border-radius: 5px;
-    color: #fff;
+    font-size: 70px;
+}
+.about-programm__subtitle {
+    margin-top: 0;
+    font-size: 20px;
+}
+.about-programm__inner {
+    margin: 0 auto;
+    max-width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 .about-programm__text {
     text-align: center;
     padding: 15px;
     font-size: 24px;
-    color: #fff;
+}
+.more-link {
+    color: blue;
+}
+#more {
+    display: none;
+}
+.more-link {
+    border-color: #fff;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+}
+.more-link:hover {
+    text-decoration: underline;
 }
 .infographics {
     margin: 5px;
